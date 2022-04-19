@@ -1,0 +1,4 @@
+1. Understand the problem
+2. Plan
+3. Psudocode
+4. Divide and Conquer
