@@ -1,22 +1,21 @@
-function createGrid(x) {
-    for (let rows = 0; rows < x; rows ++) {
-        for (let columns = 0; columns < x; columns ++) {
 
-        const container = document.querySelector('#container');
+function makeGrid() {
+    let tbl = document.getElementById("pixelCanvas")
 
-        const grid = document.createElement('div');
-        grid.classList.add('grid')
+    for (let i = 0; i < 11; i++) {
+        let myRow = document.createElement("tr");
+        myRow.id = "row" + i; 
 
-        container.appendChild(grid);
+        tbl.appendChild(myRow);
+        let rowW = document.getElementById("row" + i);
         
-        if (columns === x) {
-            document.createElement('br');
-        }
+        for( let j = 0; j < 11; j++) {
+            let myCell = document.createElement("td");
+
+            rowW.appendChild(myCell);
         }
     }
 }
-
-createGrid(16);
 
 
 
