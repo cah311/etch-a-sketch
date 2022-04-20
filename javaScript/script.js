@@ -1,5 +1,8 @@
 
-function makeGrid(x) {
+function makeGrid() {
+    
+    let x = prompt("Grid Size...");
+
     let tbl = document.getElementById("pixelCanvas")
 
     for (let i = 0; i < x; i++) {
@@ -17,5 +20,15 @@ function makeGrid(x) {
     }
 }
 
+makeGrid();
 
+function changeColor() {
+    let cellColor = document.getElementById("colorPicker").value;
+
+    document.td.style.backgroundColor = cellColor;
+
+    
+}
+
+document.getElementById('colorPicker').addEventListener('input',changeColor);
 
