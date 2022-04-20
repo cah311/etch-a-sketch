@@ -14,7 +14,7 @@ function makeGrid() {
         
         for( let j = 0; j < x; j++) {
             let myCell = document.createElement("td");
-
+            myCell.id = "td";
             rowW.appendChild(myCell);
         }
     }
@@ -24,8 +24,11 @@ makeGrid();
 
 function changeColor() {
     let cellColor = document.getElementById("colorPicker").value;
+    
+    
+    document.getElementById('td').style.backgroundColor = cellColor;
+    
 
-    document.td.style.backgroundColor = cellColor;
 
     
 }
