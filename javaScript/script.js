@@ -22,16 +22,14 @@ function makeGrid() {
 
 makeGrid();
 
-function changeColor() {
+const canvas = document.getElementById('pixelCanvas');
+
+canvas.addEventListener('mouseover', function changeColor() {
     let cellColor = document.getElementById("colorPicker").value;
     
-    
     document.getElementById('td').style.backgroundColor = cellColor;
-    
+        
+});
 
-
-    
-}
-
-document.getElementById('colorPicker').addEventListener('input',changeColor);
+//document.getElementById('colorPicker').addEventListener('input',changeColor);
 
