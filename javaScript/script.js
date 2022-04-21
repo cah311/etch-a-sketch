@@ -14,22 +14,42 @@ function makeGrid() {
         
         for( let j = 0; j < x; j++) {
             let myCell = document.createElement("td");
-            myCell.id = "td";
+            myCell.id = "td" + j;
             rowW.appendChild(myCell);
         }
     }
 }
-
 makeGrid();
 
-const canvas = document.getElementById('pixelCanvas');
 
-canvas.addEventListener('mouseover', function changeColor() {
-    let cellColor = document.getElementById("colorPicker").value;
+// document.getElementById('td2').addEventListener('mouseover', changeColor)
+
+// function changeColor(cell) {
+//     let cellColor = document.getElementById("colorPicker").value;
     
-    document.getElementById('td').style.backgroundColor = cellColor;
+//     cell.target.style.backgroundColor = cellColor;
         
-});
+// };
 
-//document.getElementById('colorPicker').addEventListener('input',changeColor);
+ 
+let table = document.querySelector('#pixelCanvas')
+let selectedCells = table.getElementsByClassName('selected');
 
+table.addEventListener('mouseover', function(e) {
+    let td = e.target;
+
+    if (td.tagName !== 'TD'){
+        return
+    }
+
+    if (selectedCells.length) {
+        selectedCells[0].className = ''
+    }
+    let cellColor = document.getElementById("colorPicker").value;
+    td.style.backgroundColor = cellColor;
+
+    
+    td.className = 'selected';
+
+
+})
