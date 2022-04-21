@@ -39,8 +39,8 @@ input, #colorPicker {
 td {
     aspect-ratio: 1/1;
     outline: 1px solid rgb(178, 37, 37);
-    height: 1rem;
-    width: 1rem;
+    width: 0.1%;
+    white-space: nowrap;
     
 }
 
