@@ -2,3 +2,16 @@
 2. Plan
 3. Psudocode
 4. Divide and Conquer
+
+Tasks
+COMPLETE 1. Create a grid unsing JavaScript 
+COMPLETE 2. Set up hover that changes div color when mouse passes over
+3. Add a button to top of the page that will clear the grid and ask for size of new grid 
+4. Make Better
+--Provide different color patterns
+--Provide different drawing settings
+--->'Hover', 'On Click hold', 'click to activate'
+--Create a better design
+---> Make layout nicer
+---> Improve title fonts and logo
+---> Imrpove page background 
