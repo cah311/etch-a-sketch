@@ -9,6 +9,10 @@ COMPLETE 2. Set up hover that changes div color when mouse passes over
 3. Add a button to top of the page that will clear the grid and ask for size of new grid 
 4. Make Better
 --Provide different color patterns
+--->specific color
+--->Black and white
+--->10% blacker after each pass
+--->Random Color 
 --Provide different drawing settings
 --->'Hover', 'On Click hold', 'click to activate'
 --Create a better design
