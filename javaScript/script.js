@@ -2,6 +2,15 @@
 function makeGrid() {
     
     let x = prompt("Grid Size...");
+    
+    if (isNaN(x)) {
+        x = prompt("Input is not a number. Please pick again.")
+    } else if (x > 100) {
+        x = prompt("Please pick lower than 100")
+    } else if (x < 1) {
+        x = prompt("Input must be 1 of greater")
+    }
+
 
     let tbl = document.getElementById("pixelCanvas")
 
