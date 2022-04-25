@@ -70,15 +70,15 @@ function resetGrid() {
     for (x = 0;  x <= cells.length; ) {
         console.log(cellRow)
         
-        
+        tbl.removeChild(cellRow); 
         x++;
         let rowNum = "row" + x;
         cellRow = document.getElementById(rowNum);
         console.log(cellRow)
-        tbl.removeChild(cellRow); 
+        
         
     }
-    
+    makeGrid();
     // while (cells.length >= 0) {
         
        
