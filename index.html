@@ -9,35 +9,31 @@
 
     <h1>Etch-A-Sketch</h1>
 
-    <!--     
-    <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
-        Grid Size:
-        <input type="number" id="inputHeight" name="height" min="1" placeholder="ex, '16' = 16x16">
-        
-        <input type="submit" onclick="makeGrid(document.getElementById('inputHeight').value);return false;">
-    </form>
-
-    -->
+    <div id="mainContainer">
+        <div id="textContainer">
+            <h2>Pick A Color</h2>
     
+            <div class="container">
+                
+                <input type="color" id="colorPicker">
+                <button onclick="resetGrid()">Reset</button>
 
-    <h2>Pick A Color</h2>
+            </div>
+    
+        </div>
+    
+        <div id="gridContainer">
+            <div class="container">
+            
+                <table id="pixelCanvas"></table>
+            </div>
+        </div>
 
-    <div class="container">
-        
-        <input type="color" id="colorPicker">
-    </div>
-
-    <h2>Design Canvas</h2>
-    <button onclick="resetGrid()">Reset</button>
-    <div class="container">
-        
-        <table id="pixelCanvas"></table>
     </div>
     
-
-
     
+    
+
     <script src="./javaScript/script.js" defer>
 
     </script>

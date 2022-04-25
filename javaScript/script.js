@@ -48,25 +48,14 @@ table.addEventListener('mouseover', function(e) {
 
 })
 
+//remove all cells, ask a new grid size, then create new grid
 function resetGrid() {
-    
-  
     
     let tbl = document.getElementById("pixelCanvas")
     let cells = document.getElementsByTagName('td')
     
     let cellRow = document.getElementById('row0') ;
     
-    // console.log(cells.length)
-    
-    // console.log(cellRow)
-    // let x = "row" + 1;
-    // console.log(x)
-    // cellRow = document.getElementById(x) ;
-
-    // console.log(cellRow)
-
-
     for (x = 0;  x <= cells.length; ) {
         console.log(cellRow)
         
@@ -79,38 +68,4 @@ function resetGrid() {
         
     }
     makeGrid();
-    // while (cells.length >= 0) {
-        
-       
-    //     tbl.removeChild(cellRow); 
-        
-        
-
-        
-    // }
-
-    
-
-    // for (k = x; k != 0; k --) {
-    //     pixelCanvas.removeChild(cellRow);
-    // }
-
-    
-
-    // let x = prompt("Grid Size...");
-
-
-    // for (let i = 0; i < x; i++) {
-    //     let myRow = document.createElement("tr");
-    //     myRow.id = "row" + i; 
-
-    //     tbl.appendChild(myRow);
-    //     let rowW = document.getElementById("row" + i);
-        
-    //     for( let j = 0; j < x; j++) {
-    //         let myCell = document.createElement("td");
-    //         myCell.id = "td" + j;
-    //         rowW.appendChild(myCell);
-    //     }
-    // }
 }
